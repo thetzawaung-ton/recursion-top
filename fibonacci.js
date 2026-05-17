@@ -9,3 +9,15 @@ export const fibs = (num) => {
   }
   return result;
 };
+
+export const fibsRec = (num) => {
+  if (num === 1) {
+    return [0];
+  }
+  if (num === 2) {
+    return [0, 1];
+  }
+  const prevNum = fibsRec(num - 1);
+  prevNum.push(prevNum.at(-1) + prevNum.at(-2));
+  return prevNum;
+};

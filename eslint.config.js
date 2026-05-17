@@ -9,7 +9,7 @@ export default defineConfig([
     extends: ["js/recommended"],
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
     env: {
-      "jest": true,
-    }
+      jest: true,
+    },
   },
 ]);
